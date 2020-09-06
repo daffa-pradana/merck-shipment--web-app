@@ -1,0 +1,180 @@
+/* Boxes Settings */
+#box1 {
+  width: 15%;
+  height: 648px;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+#box2 {
+  width: 80%;
+  height: 420px;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+#box3 {
+  width: 15%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+#box4 {
+  width: 80%;
+  margin-left: 2%;
+  padding-bottom: 20px;
+  height: 180px;
+}
+
+/* Preference Button Settings */
+#set-btn {
+  padding: 10px 75px;
+  margin-top: 90px;
+  margin-left: 20px;
+  font-size: 9pt;
+}
+
+/* Default Vector Settings */
+.default-vector {
+  margin-top: 60px;
+}
+
+/* Custom Field Settings */
+#box1 form {
+  margin-top: 20px;
+}
+.custom-field {
+  margin-left: 20px;
+  margin-top: 15px;
+  width: 170px;
+  height: 70px;
+}
+.field-label {
+  font-size: 8pt;
+}
+.field input {
+  font-size: 8pt;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+.field select {
+  font-size: 8pt;
+  margin-top: 7px;
+  margin-left: 6px;
+}
+
+/* Custom Breadcrumb Settings */
+#custom-breadcrumb {
+  margin-left: 2%;
+  margin-top: 9px;
+  width: 500px;
+  position: relative;
+}
+#custom-breadcrumb span {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 9pt;
+  letter-spacing: 0.5px;
+}
+
+#unset-graph {
+  margin-top: 12px;
+  margin-left: 1%;
+  font-size: 10pt;
+  width: 120px;
+}
+
+/* Custom Graph Settings */
+.graph-container {
+  width: 96.5%;
+  height: 290px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.legend-container {
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 20px;
+}
+.legend {
+  float: left;
+}
+.legend-container img {
+  margin-left: 20px;
+}
+.legend-container span {
+  margin-left: 5px;
+  letter-spacing: 0.5px;
+  font-size: 8pt;
+  color: #93939d;
+}
+
+/* Custom Table 1 Settings */
+#custom-table-1 {
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 15px;
+}
+#custom-table-1 th {
+  font-weight: bolder;
+  font-size: 8pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+#custom-table-1 td {
+  font-size: 8pt;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#tb1-col1 {
+  width: 10%;
+  text-align: center;
+}
+#tb1-col2 {
+  width: 6%;
+  text-align: center;
+}
+#tb1-col3 {
+  width: 6%;
+  text-align: center;
+}
+#tb1-col4 {
+  width: 6%;
+  text-align: center;
+}
+#tb1-col5 {
+  width: 6%;
+  text-align: center;
+}
+#tb1-col6 {
+  width: 6%;
+  text-align: center;
+}
+#tb1-col7 {
+  width: 6%;
+  text-align: center;
+}
+#tb1-col8 {
+  width: 6%;
+  text-align: center;
+}
+#tb1-col9 {
+  width: 6%;
+  text-align: center;
+}
+#tb1-col10 {
+  width: 6%;
+  text-align: center;
+}
+#tb1-col11 {
+  width: 6%;
+  text-align: center;
+}
+#tb1-col12 {
+  width: 6%;
+  text-align: center;
+}
+#tb1-col13 {
+  width: 6%;
+  text-align: center;
+}

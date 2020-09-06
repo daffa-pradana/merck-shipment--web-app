@@ -1,0 +1,403 @@
+/* Floating Boxes */
+#import-data {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+#import-data form {
+  padding: 20px 20px;
+}
+#import-data button {
+  padding: 8px 15px;
+  font-size: 13px;
+  background-color: #2dbecd;
+  border: none;
+  color: #ffffff;
+  font-family: "lato-Regular";
+  border-radius: 5px;
+}
+#import-data button:hover {
+  background-color: #259fa5;
+  cursor: pointer;
+}
+#import-data input[type="file"] {
+  font-size: 11px;
+}
+.float-header {
+  background-color: #f8f8fc;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.float-header span {
+  margin-left: 15px;
+  font-size: 13px;
+  color: #1b1b25;
+}
+.close-btn {
+  margin-right: 10px;
+}
+.close-btn img {
+  width: 18px;
+}
+
+/* Boxes Settings */
+#box1 {
+  width: 70%;
+  height: 410px;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+#box2 {
+  width: 25%;
+  height: 410px;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+#box3 {
+  width: 70%;
+  margin-left: 2%;
+  margin-top: 2%;
+  padding-bottom: 20px;
+}
+#box4 {
+  width: 25%;
+  margin-left: 2%;
+  margin-top: 2%;
+  padding-bottom: 20px;
+}
+
+/* Custom Select Settings */
+.custom-select {
+  width: 122px;
+  margin-top: 17px;
+}
+
+/* Custom Search Settings */
+#custom-search {
+  margin-left: 2%;
+  margin-top: 15px;
+  width: 365px;
+}
+#search-field {
+  width: 55%;
+  margin-top: 11px;
+  margin-left: 2%;
+  font-size: 9pt;
+}
+#search-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+#search-btn img {
+  width: 15px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+#custom-search select {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 9pt;
+}
+
+/* Custom Breadcrumb Settings */
+#custom-breadcrumb {
+  margin-left: 2%;
+  margin-top: 15px;
+  width: 365px;
+  position: relative;
+}
+#custom-breadcrumb span {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 9pt;
+  letter-spacing: 0.5px;
+}
+
+/* Custom Hyperlink Settings */
+#add-imp-chem {
+  margin-top: 15px;
+  margin-left: 4%;
+  font-size: 10pt;
+  width: 125px;
+}
+#add-exp-chem {
+  margin-top: 15px;
+  margin-left: 4%;
+  font-size: 10pt;
+  width: 125px;
+}
+#add-imp-phar {
+  margin-top: 15px;
+  margin-left: 4%;
+  font-size: 10pt;
+  width: 125px;
+}
+#add-exp-phar {
+  margin-top: 15px;
+  margin-left: 4%;
+  font-size: 10pt;
+  width: 125px;
+}
+#import-report {
+  margin-top: 15px;
+  margin-left: 3.5%;
+  font-size: 10pt;
+  width: 135px;
+}
+#pending-report {
+  margin-top: 15px;
+  margin-left: 3.5%;
+  font-size: 10pt;
+  width: 120px;
+}
+#unset-search {
+  margin-top: 17px;
+  margin-left: 1%;
+  font-size: 10pt;
+  width: 120px;
+}
+
+/* Custom Autofill */
+.autofill-box {
+  width: 225px;
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 10;
+}
+.autofill-list {
+  list-style: none;
+  font-size: 8pt;
+}
+.autofill-list li {
+  padding: 5px 10px;
+  border: 0.5px solid #f8f8fc;
+}
+.autofill-list li:hover {
+  background-color: #f8f8fc;
+}
+
+/* Custom Table 1 */
+.table-records {
+  height: 230px;
+  overflow-y: auto;
+}
+.table-header {
+  margin-top: 15px;
+}
+#custom-table-1 {
+  width: 95%;
+  margin-left: 2%;
+}
+#custom-table-1 th {
+  font-weight: bolder;
+  font-size: 8pt;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+#custom-table-1 td {
+  font-size: 8pt;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#tb1-col1 {
+  width: 14%;
+  text-align: left;
+  padding-left: 2.5%;
+}
+#tb1-col2 {
+  width: 15%;
+  text-align: left;
+  padding-left: 1%;
+}
+#tb1-col3 {
+  width: 13%;
+  text-align: left;
+  padding-left: 1%;
+}
+#tb1-col4 {
+  width: 15%;
+  text-align: left;
+  padding-left: 1%;
+}
+#tb1-col5 {
+  width: 15%;
+  text-align: left;
+  padding-left: 1%;
+}
+#tb1-col6 {
+  width: 25%;
+  text-align: right;
+  padding-right: 5%;
+}
+#tb1-col6 a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-family: "Lato-bold" !important;
+}
+#tb1-col6 a:hover {
+  color: #2dbecd;
+}
+
+/* Custom Table 2 */
+#custom-table-2 {
+  width: 85%;
+  margin-left: 8%;
+  margin-top: 15px;
+}
+#custom-table-2 th {
+  font-weight: bolder;
+  font-size: 8pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-align: left;
+}
+#custom-table-2 td {
+  font-size: 8pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#tb2-col1 {
+  width: 40%;
+  padding-left: 10px;
+  text-align: left;
+}
+#tb2-col2 {
+  width: 40%;
+  padding-left: 10px;
+  text-align: left;
+}
+#tb2-col3 {
+  width: 20%;
+  text-align: right;
+  padding-right: 0px;
+}
+#tb2-col3 a {
+  margin-right: 50%;
+}
+#sub-content {
+  width: 100%;
+}
+#selected-info {
+  width: 100%;
+  height: 260px;
+  margin-top: 12px;
+}
+#selected-action {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#info {
+  margin-left: 20px;
+  margin-top: 15px;
+  width: 145px;
+  height: 40px;
+}
+
+/* Save Button */
+#save-btn {
+  font-size: 8pt;
+  text-decoration: none;
+  position: relative;
+  height: 35px;
+  width: 140px;
+  margin-top: 15px;
+}
+#save-btn img {
+  position: absolute;
+  top: 11px;
+  left: 14px;
+  width: 14px;
+}
+#save-btn span {
+  position: absolute;
+  top: 11px;
+  left: 40px;
+}
+
+/* Delete Button */
+#delete-btn {
+  font-size: 8pt;
+  text-decoration: none;
+  position: relative;
+  height: 35px;
+  width: 140px;
+  margin-top: 15px;
+}
+#delete-btn img {
+  position: absolute;
+  top: 11px;
+  left: 14px;
+  width: 14px;
+}
+#delete-btn span {
+  position: absolute;
+  top: 11px;
+  left: 40px;
+}
+
+/* Attach Button */
+#attach-btn {
+  font-size: 8pt;
+  text-decoration: none;
+  position: relative;
+  height: 35px;
+  width: 123px;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+#attach-btn img {
+  position: absolute;
+  top: 11px;
+  left: 14px;
+  width: 14px;
+}
+#attach-btn span {
+  position: absolute;
+  top: 11px;
+  left: 40px;
+}
+#shipping-report {
+  width: 100%;
+}
+#section-header {
+  font-size: 11pt;
+  color: rgba(0, 0, 0, 0.3);
+}
+.custom-form {
+  font-size: 9pt;
+  margin-top: 20px;
+}
+.input input,
+textarea {
+  font-size: 9pt;
+  width: 90%;
+}
+.input select {
+  font-size: 9pt;
+  width: 90%;
+}
+.form-section {
+  width: 87%;
+  margin-top: 13px;
+}
+
+/* Shipping Report Boxes */
+.shipping-col {
+  float: left;
+  width: 48%;
+  margin-left: 13px;
+}

@@ -1,0 +1,790 @@
+/* ----- Layout ----- */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  height: 100%;
+  background-color: #f8f8fc;
+}
+#container {
+  min-height: 100%;
+}
+#main {
+  min-height: 100%;
+  overflow: auto;
+  padding-bottom: 30px;
+}
+#top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 86px;
+  background-color: #ffffff;
+  z-index: 1;
+}
+#user-label {
+  position: absolute;
+  left: 120px;
+  top: 23px;
+}
+#user-label span {
+  color: #ffc832;
+  letter-spacing: 0.5pt;
+  font-size: 18px;
+}
+#user-label p {
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.6pt;
+  font-size: 13.5px;
+  margin-top: 3px;
+}
+#logout {
+  position: absolute;
+  right: 32px;
+  top: 28px;
+}
+#logout img {
+  width: 30px;
+}
+#side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 86px;
+  height: 100%;
+  background-color: #2dbecd;
+  z-index: 2;
+}
+#logo-sm {
+  position: absolute;
+  left: 19px;
+  top: 28px;
+}
+#content {
+  margin-left: 86px;
+  margin-top: 86px;
+  width: 1400px;
+}
+
+/* ------ Custom box ----- */
+.container-box {
+  background-color: #ffffff;
+  float: left;
+  border-radius: 5px;
+}
+.container-hidden {
+  float: left;
+}
+
+/* ----- Message Box ----- */
+#msg-box {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 50;
+  width: 500px;
+}
+#msg-text {
+  width: 80%;
+  margin-left: 5%;
+  float: left;
+}
+#msg-btn {
+  width: 3%;
+  margin-right: 2%;
+  float: right;
+  height: 100%;
+}
+#msg-box span {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+#msg-box a {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.suc-msg {
+  background-color: #2dbecd;
+  color: #ffffff;
+}
+.suc-msg:hover {
+  background-color: #29abb9;
+}
+.suc-msg a {
+  color: #ffffff;
+}
+.war-msg {
+  background-color: #ffc832;
+  color: #1b1b25;
+}
+.war-msg:hover {
+  background-color: #fbb700;
+}
+.war-msg a {
+  color: #1b1b25;
+}
+.err-msg {
+  background-color: #e61e50;
+  color: #ffffff;
+}
+.err-msg:hover {
+  background-color: #cf1b48;
+}
+.err-msg a {
+  color: #ffffff;
+}
+
+/* Box Header */
+#header {
+  height: 50.5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#header h5 {
+  margin-top: 17px;
+}
+.header-left {
+  float: left;
+  margin-left: 20px;
+}
+.header-right {
+  float: right;
+  margin-right: 20px;
+}
+.indicator {
+  font-size: 8pt;
+  margin-top: 20px;
+}
+
+/* ----- Menu ----- */
+#side-menu {
+  position: absolute;
+  left: 0px;
+  top: 96px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#side-menu a {
+  margin-top: 40px;
+  text-decoration: none;
+}
+#side-menu img {
+  width: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#side-menu p {
+  font-size: 8px;
+  letter-spacing: 0.5px;
+  margin-top: 12px;
+  text-align: center;
+}
+.side-active {
+  background-color: #2dbecd;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.side-btn {
+  background-color: #2dbecd;
+  color: #81d8e1;
+  border: none;
+  cursor: pointer;
+}
+.side-btn:hover {
+  color: #ffffff;
+}
+
+/* ----- Vectors ----- */
+.default-vector {
+  margin-left: 40%;
+  width: 210px;
+}
+.default-vector img {
+  width: 100%;
+}
+.default-vector p {
+  color: rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* ----- Default Form ----- */
+.default-form {
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+.default-form p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* ----- Buttons ----- */
+/*Width, Height, and Padding can be ajusted in another css*/
+.cyan-btn {
+  font-family: "Lato-bold";
+  letter-spacing: 1pt;
+  color: #ffffff;
+  background-color: #2dbecd;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.cyan-btn:hover {
+  background-color: #29abb9;
+}
+.white-btn {
+  font-family: "Lato-bold";
+  letter-spacing: 1pt;
+  color: #2dbecd;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1.1px solid #2dbecd;
+  cursor: pointer;
+  outline: none;
+}
+.white-btn:hover {
+  background-color: #f3f3f7;
+}
+.yellow-btn {
+  font-family: "Lato-bold";
+  letter-spacing: 1pt;
+  color: #1b1b25;
+  background-color: #ffc832;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.yellow-btn:hover {
+  background-color: #f3be2f;
+}
+.delete-btn {
+  font-family: "Lato-bold";
+  letter-spacing: 1pt;
+  color: #ffffff;
+  background-color: #e61e50;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.delete-btn:hover {
+  background-color: #cf1b48;
+}
+
+/* ----- Select customs ----- */
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+}
+.custom-select select {
+  width: 100%;
+  color: #000;
+  padding: 1px;
+  border: none;
+  font-size: 12px;
+  font-family: "Lato-bold";
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.custom-select::before {
+  content: url("../img/icons/drop.svg");
+  text-align: center;
+  position: absolute;
+  top: 4.5px;
+  right: 5px;
+}
+
+/* ----- Custom Search ----- */
+/* Width can be set in another css */
+.custom-search {
+  background-color: #f8f8fc;
+  height: 35px;
+  border-radius: 5px;
+}
+
+/* ----- Custom Breadcrumbs ----- */
+.custom-breadcrumb {
+  background-color: #f8f8fc;
+  height: 35px;
+  border-radius: 5px;
+}
+
+/* ----- Custom Input ----- */
+.custom-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/* ----- Custom Table ----- */
+.custom-table {
+  width: 100%;
+  border: 0px;
+  border-collapse: collapse;
+}
+.custom-table th {
+  background-color: #f8f8fc;
+}
+.custom-table td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* Overdue  Stats */
+.overdue {
+  padding: 5px 10px;
+  border: 1px solid #e61e50;
+  background-color: rgba(230, 30, 80, 0.1);
+  border-radius: 50px;
+}
+.overdue span {
+  text-align: center;
+  color: #e61e50;
+  font-size: 9px;
+}
+/* Dueweek  Stats */
+.dueweek {
+  padding: 5px 10px;
+  border: 1px solid #fbb700;
+  background-color: rgba(251, 183, 0, 0.1);
+  border-radius: 50px;
+}
+.dueweek span {
+  text-align: center;
+  color: #fbb700;
+  font-size: 9px;
+}
+/* Dueby  Stats */
+.dueby {
+  padding: 5px 10px;
+  border: 1px solid #1e9700;
+  background-color: rgba(30, 151, 0, 0.1);
+  border-radius: 50px;
+}
+.dueby span {
+  text-align: center;
+  color: #1e9700;
+  font-size: 9px;
+}
+/* Submitted Stats */
+.submitted {
+  padding: 5px 10px;
+  border: 1px solid #bdbdbd;
+  background-color: rgba(189, 189, 189, 0.1);
+  border-radius: 50px;
+}
+.submitted span {
+  text-align: center;
+  color: #bdbdbd;
+  font-size: 9px;
+}
+
+/* ----- Custom Hyperlink ----- */
+/* width can be set in another css */
+.custom-link {
+  text-decoration: none;
+  color: #2dbecd;
+  height: 30px;
+  position: relative;
+}
+.custom-link:hover span {
+  color: #29abb9;
+  text-decoration: underline;
+}
+.custom-link img {
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  width: 16px;
+}
+.custom-link span {
+  position: absolute;
+  top: 7px;
+  left: 25px;
+}
+
+/* ----- Alert ----- */
+.alert {
+  color: #cf1b48;
+}
+
+/* ----- Custom Records ----- */
+.custom-record {
+  /* Weight & Height costumized another css*/
+  font-family: "Lato-bold";
+  float: left;
+}
+.custom-record p {
+  font-size: 8pt;
+  letter-spacing: 0.5pt;
+  color: rgba(0, 0, 0, 0.3);
+  margin-bottom: 3px;
+}
+.custom-record span {
+  font-size: 8pt;
+  letter-spacing: 0.5pt;
+  color: #000000;
+}
+
+/* Custom Detailed Info */
+.custom-info {
+  margin-top: 12.5px;
+  width: 90%;
+}
+.custom-info table {
+  margin-left: 15px;
+}
+.custom-info td {
+  padding: 5px 10px;
+}
+.info-label {
+  font-family: "Lato-bold";
+  font-size: 8pt;
+}
+.info {
+  font-family: "Lato-regular";
+  font-size: 9pt;
+}
+
+/* ----- Float Items ----- */
+.left-item {
+  float: left;
+}
+.right-item {
+  float: right;
+}
+
+/* ----- Custom Cross Button ----- */
+.cross-btn {
+  width: 15px;
+  height: 15px;
+  padding: 0px 8px;
+  background-color: #e0e0e0;
+  position: relative;
+}
+.cross-btn:hover {
+  background-color: #e61e50;
+}
+.cross-btn img {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: -2px;
+  right: -1px;
+}
+
+/* ----- Custom Save Button ----- */
+.save-btn {
+  width: 15px;
+  height: 15px;
+  padding: 0px 8px;
+  background-color: #e0e0e0;
+  position: relative;
+}
+.save-btn:hover {
+  background-color: #2dbecd;
+}
+.save-btn img {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: -2px;
+  right: -1px;
+}
+
+/* ----- Custom Upload Button ----- */
+.upload-container {
+  height: 30px;
+  width: 295px;
+  margin-top: 20px;
+  margin-left: 30px;
+  position: relative;
+}
+.upload-container button {
+  width: 90%;
+  border: 1.5px solid #2dbecd;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  height: 30px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+.upload-container button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-color: #29abb9;
+}
+#upload-text {
+  color: #7d7d89;
+  font-size: 12px;
+  font-family: "Lato-regular";
+  letter-spacing: 0.5px;
+}
+.upload-container input[type="submit"] {
+  background: url("../img/icons/submit-upload.svg") #2dbecd;
+  padding: 0;
+  background-size: contain;
+  border: 1.5px solid #2dbecd;
+  width: 10%;
+  height: 30px;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.upload-container input[type="submit"]:hover {
+  background-color: #29abb9;
+  border-color: #29abb9;
+}
+#upload-submit {
+  pointer-events: none;
+}
+
+/* ----- Custom Pencil Button ----- */
+.edit-btn {
+  width: 15px;
+  height: 15px;
+  padding: 0px 8px;
+  background-color: #e0e0e0;
+  position: relative;
+}
+.edit-btn:hover {
+  background-color: #bdbdbd;
+}
+.edit-btn img {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: -2px;
+  right: -1px;
+}
+
+/* ----- Custom Form ----- */
+/* Adjust The font size, width and else in another CSS */
+.form-section {
+  padding: 30px 30px;
+  border: 0.5px solid rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+.custom-form {
+  width: 100%;
+}
+.custom-form td {
+  padding: 10px 5px;
+}
+.input-label {
+  color: rgba(0, 0, 0, 0.3);
+  font-family: "Lato-bold";
+  text-align: right;
+  width: 35%;
+}
+.input {
+  color: #000000;
+  font-family: "Lato-regular";
+  width: 65%;
+}
+.input input,
+select,
+textarea {
+  padding: 5px 0px 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.input input:read-only {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.input input[type="number"]::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.input input[type="number"] {
+  -moz-appearance: textfield;
+}
+.charge-remarks {
+  background-color: #ffc832;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 0.5px solid #ffc832;
+  border-radius: 5px;
+}
+.mandatory {
+  color: #cf1b48 !important;
+}
+
+/* ----- Custom Field ----- */
+/* width, font-size can be set in other css file */
+.custom-field {
+  float: left;
+}
+.field-label {
+  color: #7d7d89;
+}
+.field {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  background-color: #f8f8fc;
+}
+.field input[type="text"] {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 80%;
+}
+.field input[type="number"] {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 80%;
+}
+.field select {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 90%;
+}
+.field input[type="date"] {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 90%;
+}
+
+/* Custom Checkboxes */
+.custom-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 21px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+.custom-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #2dbecd;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+.custom-checkbox .checkmark:after {
+  left: 6px;
+  top: 3.5px;
+  width: 2px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ----- Layer Shadow ----- */
+.layer-1 {
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+.layer-2 {
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
+    0px 2px 4px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
+    0px 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+.layer-3 {
+  -webkit-box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.2),
+    0px 2px 4px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.2),
+    0px 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ----- Fonts ----- */
+@font-face {
+  font-family: Lato-regular;
+  src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Lato-light;
+  src: url("../fonts/Lato/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: Lato-hairline;
+  src: url("../fonts/Lato/Lato-Hairline.ttf") format("truetype");
+}
+@font-face {
+  font-family: Lato-bold;
+  src: url("../fonts/Lato/Lato-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: Lato-black;
+  src: url("../fonts/Lato/Lato-Black.ttf") format("truetype");
+}
+.font-xxs {
+  font-family: "Lato-hairline", sans-serif;
+}
+.font-xs {
+  font-family: "Lato-light", sans-serif;
+}
+.font-sm {
+  font-family: "Lato-regular", sans-serif;
+}
+.font-md {
+  font-family: "Lato-bold", sans-serif;
+}
+.font-bg {
+  font-family: "Lato-black", sans-serif;
+}
