@@ -48,7 +48,7 @@ This Web application was made for use by Merck Indonesia, therefore the develope
 - JS Library - Chart.js
 - DBMS - MySQL
 
-This web made with PHP Native, which made the code is a little bit hard to develop in the<br>future. The developer of this web suggest to made this source code implemented into PHP<br>framework such as Laravel or etc.
+This web made with PHP Native, which made the code is a little bit hard to develop in the<br>future. The developer of this web suggest to made this source code implemented into PHP<br>framework such as Laravel or Code Igniter.
 
 ## Release History
 
